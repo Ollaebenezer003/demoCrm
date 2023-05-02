@@ -31,9 +31,9 @@
                                             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                                             {!!Form::close()!!}
                                         </div>
-                                        <div class="col-md-2 offset-md-0 form-1-box wow fadeInUp">
+                                        {{-- <div class="col-md-2 offset-md-0 form-1-box wow fadeInUp">
                                             <a href="/export_pdf" class="btn btn-dark">Print to PDF</a>
-                                        </div>
+                                        </div> --}}
                                     </fieldset>
                                 @endforeach  
                     </div>                              
