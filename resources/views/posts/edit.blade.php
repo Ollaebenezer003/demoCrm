@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col form-1 section-description wow fadeIn">
-                    <h2>EDIT Candidate's Information</h2>
+                    <h2>EDIT {{$post->baptName}}, {{$post->famName}}'s Information</h2>
                     <div class="divider-1 wow fadeInUp"><span></span></div>
                     <p>Update The Candidate Information As Applicable.</p>
                 </div>
@@ -107,19 +107,19 @@
                                 <legend class="w-auto px-2">FIRST HOLY COMMUNION</legend>
                                 <div class="form-group">
                                     {{Form::label('title', 'Date:')}}
-                                    {{Form::date('commDate', '', ['class' => 'form-control', 'placeholder' => '', 'readonly' => ''])}}
+                                    {{Form::date('commDate', '', ['class' => 'form-control', 'placeholder' => 'N/A', 'readonly' => ''])}}
                                 </div>
                                 <div class="form-group">
                                     {{Form::label('title', 'Place/Parish:')}}
-                                    {{Form::text('commPlace', '', ['class' => 'form-control', 'placeholder' => ''])}}
+                                    {{Form::text('commPlace', '', ['class' => 'form-control', 'placeholder' => 'N/A'])}}
                                 </div>
                                 <div class="form-group">
                                     {{Form::label('title', 'Minister:')}}
-                                    {{Form::text('commMinister', '', ['class' => 'form-control', 'placeholder' => '', 'readonly' => ''])}}
+                                    {{Form::text('commMinister', '', ['class' => 'form-control', 'placeholder' => 'N/A', 'readonly' => ''])}}
                                 </div>
                                 <div class="form-group">
                                     {{Form::label('title', "Signed By:")}}
-                                    {{Form::text('commSignatory', '', ['class' => 'form-control', 'placeholder' => "", 'readonly' => ''])}}
+                                    {{Form::text('commSignatory', '', ['class' => 'form-control', 'placeholder' => "N/A", 'readonly' => ''])}}
                                 </div>
                             </fieldset>
                     </div>
